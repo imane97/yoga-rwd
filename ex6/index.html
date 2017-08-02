@@ -6,6 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Montserrat" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+
+<!-- JQUERY: Une bibliothèque de fonction. On est allé chercher la source jquery sur google. La première ligne après la balise script
+ouvrante doit tjrs être là. Le dollar est la pour sélectionner ce qu'on met dans la parenthèse qui suit.
+Pas besoin de la source pour faire l'alerte (alert) mais pour le reste si.-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+	<script>
+	$(document).ready(function(){
+		alert("Hi bitch");
+		$("p").css("color","red");
+		$("p").click(function (){
+			$("header").toggleClass("invisible");
+		})
+	})
+	</script>
+
+
+
 </head>
 <body>
 	<header>
@@ -30,8 +47,21 @@
 				<p>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
 				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 			</section>
-		</div>		
+		</div>
 	</main>
 	<footer>2017 Yaga &amp; Yoga</footer>
-</body>
-</html>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+	<script>
+	// alert("Hi bitch");
+	$ (document).ready (function(){
+		// $("p").css("color", "red");
+		// $("#menu-toggle").css("color"), "magenta");
+		$("#menu-toggle").click(function(){
+			// $("p").addClass("color-red");
+			$("p").toggleClass("color-red");
+
+		});
+		</script>
+
+		</body>
+		</html>

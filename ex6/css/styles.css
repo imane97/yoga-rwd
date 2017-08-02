@@ -26,11 +26,29 @@ a:hover {
   color: black;
 }
 
-header {
+.invisible{
+  display:none;
+}
+
+/*MIS DANS LE MEDIA QUERY POUR QUE LA NAV SE METTE EN HAUT SEULEMENT SUR UN PETIT ECRAN*/
+/*header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}*/
+
+@media only screen and (min-width:800px){
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:red;
+  }
+  nav ul {
+    display: flex;
+  }
 }
+
 header a {
   display: block;
   padding: 24px;
@@ -43,7 +61,7 @@ header a:hover {
 
 nav ul {
   list-style: none;
-  display: flex;
+  /*display: flex; MIS DANS LE MEDIA QUERY POUR QUE LE MENU VERTICAL S'AFFICHE QUE SUR PETIT ECRAN*/
 }
 .wrapper {
   margin: 0 auto;
@@ -53,7 +71,7 @@ nav ul {
 
 main {
   background: linear-gradient(#f5edea, #f1e4d1);
-  
+
 }
 section {
   padding: 24px 0;
